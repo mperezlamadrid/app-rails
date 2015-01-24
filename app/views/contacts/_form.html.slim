@@ -1,13 +1,13 @@
 = form_for(@contact) do |f|
   -if @contact.errors.any?
-    #error_explanation
-      h2
-        = "#{pluralize(@contact.errors.count, "error")} prohibited this contact from being saved:"
-
-      ul
-        - @contact.errors.full_messages.each do |message|
-          li
-            = message
+    .col-md-12.col-xm-12
+      #error_explanation.alert.alert-danger
+        h5
+          = "#{pluralize(@contact.errors.count, "error")} prohibited this contact from being saved:"
+        ul
+          - @contact.errors.full_messages.each do |message|
+            li
+              = message
 
   .field
     = f.label :first_name

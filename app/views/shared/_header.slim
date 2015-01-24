@@ -1,15 +1,52 @@
-h1 THIS IS THE HEADER
+nav.navbar.navbar-default
+  .container-fluid
 
-p.navbar-text.pull-right
-- if user_signed_in?
-  p 
-  	| Logged in as 
-  	= current_user.email
-  = link_to('Edit profile', edit_user_registration_path, :class => 'navbar-link')
-  = link_to("Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link')
-- else
-  = link_to("Sign up", new_user_registration_path, :class => 'navbar-link')
-  = link_to("Login", new_user_session_path, :class => 'navbar-link')
+    .navbar-header
+      button.navbar-toggle.collapsed data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button" 
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand href="#"  Brand
+
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li
+          a href="mailto:manuperez0993@gmail.com" Contact
+        li
+          a href="#"  About me
+        li
+          a href="http://perezlamadrid.tumblr.com/" target="blank" Blog
+      ul.nav.navbar-nav.navbar-right
+      	- if user_signed_in?
+      		li
+	          = link_to("Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link')
+	        li.dropdown
+	          a.dropdown-toggle aria-expanded="false" data-toggle="dropdown" href="#" role="button" 
+	            = current_user.email
+	            span.caret
+	          ul.dropdown-menu role="menu" 
+	            li
+	              = link_to('Edit profile', edit_user_registration_path)
+	            li
+	              a href="#"  Facebook
+	            li
+	              a href="#"  Instagram
+	            li.divider
+	            li
+	              a href="#"  Github
+      	- else
+	        li
+	          = link_to("Sign up", new_user_registration_path, :class => 'navbar-link')
+	        li.dropdown
+	          = link_to("Login", new_user_session_path, :class => 'navbar-link')
 
 - flash.each do |name, msg|
-	= content_tag :div, msg, id: "flash_#{name}"
+	.col-md-12.col-xm-12
+		-if name == "notice"
+			= content_tag :div, msg, id: "flash_#{name}", :class => "alert-info alert"
+		-elsif name == "alert"
+			= content_tag :div, msg, id: "flash_#{name}", :class => "alert-danger alert"
+		-else
+			= content_tag :div, msg, id: "flash_#{name}", :class => "alert"
+

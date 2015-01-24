@@ -1,0 +1,17 @@
+h2 Resend unlock instructions
+= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f|
+  -if resource.errors.any?
+    .col-md-12.col-xm-12
+      #error_explanation.alert.alert-danger
+        h5
+          = "#{pluralize(resource.errors.count, "error(s)")} prohibited that #{resource[:email]} from being saved:"
+        ul
+          - resource.errors.full_messages.each do |message|
+            li
+              = message
+  div
+    = f.label :email
+    br/
+    = f.email_field :email, autofocus: true
+  div= f.submit "Resend unlock instructions"
+= render "devise/shared/links"
