@@ -1,3 +1,78 @@
 // Place all the styles related to the landings controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#home{
+	background: url(par1.jpg) 50% 0 no-repeat fixed;
+}
+
+#home{
+	min-height: 700px;
+	margin: 0 auto;
+	max-width: 1920px;
+	width: 100%;
+	position: relative;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.intro-text{
+	text-align: center;
+	padding-top: 300px;
+	padding-bottom: 200px;
+
+	.intro-lead-in{
+		margin-bottom: 25px;
+		font-family: "Droid Serif",Helvetica,Arial,sans-serif;
+		font-size: 40px;
+		font-style: italic;
+		line-height: 40px;
+	}
+
+	.intro-heading{
+		margin-bottom: 50px;
+		text-transform: uppercase;
+		font-family: "Montserrat" ,Helvetica,Arial,sans-serif;
+		font-size: 75px;
+		font-weight: 700;
+		line-height: 75px;
+	}
+}
+
+/*OUR SOLUTIONS*/
+.our-solutions{
+	background: #B7D3DA;
+}
+
+.our-solutions-body, .our-solutions-header{
+	text-align: center;
+	padding: 60px;
+}
+
+.our-solutions-header{
+	padding-bottom: 0px;
+}
+
+.our-solutions-body .col-md-4{
+	margin-bottom: 40px;
+}
+
+.solutions-imges{
+	background: #820701;
+	border-radius: 50%;
+	width: 164px;
+	height: 163px;
+	display: inline-block;
+	position: relative;
+}
+
+.solutions-imges img{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	margin: auto;
+}

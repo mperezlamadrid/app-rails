@@ -1,0 +1,49 @@
+// HEADER
+.navbar.navbar-default{
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	top: 0;
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.67);
+	border-color: rgba(0, 0, 0, 0.67);
+	border-radius: 0;
+
+	.container-fluid{
+		.navbar-header{
+			padding: 10px;
+			height: 72px;
+
+			a{
+				color: #fff;
+
+				&:hover{
+					color: #fff;
+				}
+			}
+
+			.navbar-toggle{
+				&:hover, &:focus{
+					background-color: rgba(0, 0, 0, 0.28);
+					outline: 0;
+				}
+			}
+		}
+
+		#bs-example-navbar-collapse-1{
+			border-color: rgba(0, 0, 0, 0.67);
+
+			ul {
+				li{
+					padding: 11px;
+					&:hover{
+						background: rgba(0, 0, 0, 0.46);
+					}
+					a{
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
