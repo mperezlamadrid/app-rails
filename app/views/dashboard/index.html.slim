@@ -25,10 +25,13 @@
   .row#parallax-dashboard
   	.pull-right.col-md-6.col-sm-12.col-xs-12
       .image-mision
-        img src="images/mision/mision3.jpg"
+        = link_to contacts_path
+          = image_tag("reminders.jpg", alt: "reminders")
+          .image-hover
+            = image_tag("reminder-icon.png", alt: "reminder-icon")
 
     .pull-left.col-md-6.col-sm-12.col-xs-12.text-mision
-			h5 Lo Que sea
+			h5 Reminders
 			p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde placeat deserunt cupiditate, facere modi, maxime fuga sunt mollitia error praesentium necessitatibus incidunt officiis! Esse culpa quam cumque, eius qui ea.
     
 

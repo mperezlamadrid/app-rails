@@ -1,23 +1,27 @@
-h1 Listing contacts
+#contacts-form
+  .content-contacts-form
+    .container
+      .row
+        h1 Listing contacts
 
-table
-  thead
-    tr
-      th First name
-      th Last name
-      th Phone
-      th colspan="3"
+        = link_to('New Contact', new_contact_path)
 
-  tbody
-    - @contacts.each do |contact|
-      tr
-        td = contact.first_name
-        td = contact.last_name
-        td = contact.phone
-        td = link_to 'Show', contact
-        td = link_to 'Edit', edit_contact_path(contact)
-        td = link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' }
+        table.table.table-striped
+          thead
+            tr
+              th First name
+              th Last name
+              th Phone
+              th colspan="3"
 
-br
+          tbody
+            - @contacts.each do |contact|
+              tr
+                td = contact.first_name
+                td = contact.last_name
+                td = contact.phone
+                td.contact-button = link_to 'Show', contact, class: "btn btn-primary"
+                td.contact-button = link_to 'Edit', edit_contact_path(contact), class: "btn btn-success"
+                td.contact-button = link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger"
 
-= link_to('New Contact', new_contact_path)
+        br
