@@ -21,6 +21,8 @@ Rails.application.routes.draw do
 
   devise_for :users
 
+  get '/about-me' => 'landings#about_me', as: :about_me
+
   # Example resource route with options:
   #   resources :products do
   #     member do

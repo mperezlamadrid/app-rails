@@ -4,4 +4,8 @@ class LandingsController < ApplicationController
 			redirect_to controller: 'dashboard', action: 'index'
   	end
   end
+
+  def about_me
+  	
+  end
 end
