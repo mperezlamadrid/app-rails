@@ -5,7 +5,12 @@
 @import "fonts";
 @import "header";
 @import "footer";
+@import "devise";
 @import "contacts";
 @import "dashboard";
 @import "landings";
 @import "font-awesome";
+
+body, html{
+	height: 100%;
+}

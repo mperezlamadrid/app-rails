@@ -1,0 +1,46 @@
+.form-bg{
+	background: url(par2.jpg) 50% 0 no-repeat;
+	height: 100%;
+
+	.form-signin{
+		padding-top: 190px;
+
+		.content-signin{
+			margin: 0 auto;
+			padding: 20px;
+			border-radius: 4px;
+			background-color: rgba(250, 249, 233, 0.56);;
+			width: 460px;
+			min-height: 330px;
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.54);
+
+			.sign-button{
+				input{
+					padding: 10px;
+					border-radius: 5px;
+					background: rgb(127, 127, 194);
+					border: none;
+					color: white;
+					width: 100%;
+					margin: 10px 0;
+				}
+			}
+		}
+	}
+}
+
+.signup{
+	padding-top: 130px!important;
+
+	.col-md-12{
+		padding-top: 20px;
+	}
+}
+
+#error_explanation{
+	margin-bottom: 0;
+}
+
+.signup-bg{
+	background: url(par4.jpg) 50% 0 no-repeat!important;
+}

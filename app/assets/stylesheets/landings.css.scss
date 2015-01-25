@@ -3,10 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #home{
 	background: url(par1.jpg) 50% 0 no-repeat fixed;
+
+	article{
+		background: rgba(0, 0, 0, 0.67);
+	}
 }
 
 #home{
-	min-height: 700px;
+	min-height: 690px;
 	margin: 0 auto;
 	max-width: 1920px;
 	width: 100%;
@@ -16,6 +20,7 @@
 	-o-background-size: cover;
 	background-size: cover;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	color: #fff;
 }
 
 .intro-text{
