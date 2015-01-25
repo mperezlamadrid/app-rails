@@ -15,3 +15,11 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+$(function(){	
+
+	$(".image-mision a img").mouseover(function(){
+	  $(this).siblings(".image-hover").toggleClass("show-image-hover");
+	});
+
+});

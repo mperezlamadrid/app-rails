@@ -1,3 +1,89 @@
 // Place all the styles related to the dashboard controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.section-mision{
+	.row{
+		padding: 30px;
+
+		.text-mision{
+			padding-top: 70px;
+		}
+	}
+
+	.image-mision{
+		text-align: center;
+		position: relative;
+		width: 250px;
+		height: 250px;
+		margin: 0 auto;
+
+		.image-hover{
+			display: none;
+			position: absolute;
+			width: 250px;
+			height: 250px;
+			background-color: rgba(0, 0, 0, 0.59);
+			top: 0;
+			left: 0;
+			border-radius: 50%;
+			img{
+				border-radius: initial;
+			}
+		}
+
+		img{
+			height: 250px;
+			border-radius: 50%;
+			width: 250px;
+		}
+	}
+}
+
+.show-image-hover{
+	display: block!important;
+
+	img{
+		height: 80px!important;
+		width: 80px!important;
+		position: absolute;
+		top: 90px;
+		right: 86px;
+	}
+}
+
+#contacts{
+	padding-top: 106px;
+}
+
+#contacts, #parallax-dashboard{
+	background: url(par3.jpg) 50% 0 no-repeat fixed;
+}
+
+#contacts, #parallax-dashboard{	
+	min-height: 400px;
+	margin: 0 auto;
+	max-width: 1920px;
+	width: 100%;
+	position: relative;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	color: #fff;
+}
+
+@media (max-width: 991px) {
+	.image-mision{
+		margin-top: 50px;
+	}
+
+	.text-mision{
+		text-align: center;
+
+		p{
+			text-align: justify;
+		}
+	}
+}

@@ -1,1 +1,35 @@
-h1 Welcome to the dashboard
+.section-mision
+  .row#contacts
+  	.pull-right.col-md-6.col-sm-12.col-xs-12
+      .image-mision
+      	= link_to contacts_path
+	        = image_tag("contacts.jpg", alt: "contacts")
+	      	.image-hover
+	      		= image_tag("contact-icon.png", alt: "contacts-icon")
+
+    .pull-left.col-md-6.col-sm-12.col-xs-12.text-mision
+			h5 Contacts
+			p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius doloribus animi laudantium culpa vel quibusdam consectetur impedit, debitis sint laborum facere vitae odio illo repellendus consequatur voluptatum ducimus id.
+  .row
+  	.pull-left.col-md-6.col-sm-12.col-xs-12
+      .image-mision
+        = link_to contacts_path
+	        = image_tag("posts.jpg", alt: "posts")
+	      	.image-hover
+	      		= image_tag("post-icon.png", alt: "posts-icon")
+
+    .pull-right.col-md-6.col-sm-12.col-xs-12.text-mision
+			h5 Post
+			p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum voluptas, quibusdam ut voluptates ipsa, a dolor reiciendis quos ab corporis illum sed aspernatur eligendi maxime incidunt inventore nemo laudantium magni.
+    
+  .row#parallax-dashboard
+  	.pull-right.col-md-6.col-sm-12.col-xs-12
+      .image-mision
+        img src="images/mision/mision3.jpg"
+
+    .pull-left.col-md-6.col-sm-12.col-xs-12.text-mision
+			h5 Lo Que sea
+			p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde placeat deserunt cupiditate, facere modi, maxime fuga sunt mollitia error praesentium necessitatibus incidunt officiis! Esse culpa quam cumque, eius qui ea.
+    
+
+= render partial: "shared/footer"
