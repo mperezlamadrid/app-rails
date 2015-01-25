@@ -8,17 +8,22 @@
           li
             = message
 
-  .field
-    = f.label :first_name
-    = f.text_field :first_name 
+  .row
+    .col-md-12
+      = f.label :first_name
+      = f.text_field :first_name, class: "form-control", placeholder: "Frist Name"
 
-  .field
-    = f.label :last_name
-    = f.text_field :last_name 
+  .row
+    .col-md-12
+      = f.label :last_name
+      = f.text_field :last_name, class: "form-control", placeholder: "Last Name"
   
-  .field
-    = f.label :phone
-    = f.number_field :phone 
+  .row
+    .col-md-12
+      = f.label :phone
+      = f.number_field :phone, class: "form-control", placeholder: "Phone Number"
   
-  .actions
-    = f.submit
+  .row.pull-right
+    .col-md-12.contact-create-button
+      = link_to('Back', contacts_path, class: "btn btn-primary pull-left")
+      = f.submit

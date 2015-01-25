@@ -16,3 +16,95 @@
 	text-align: right;
 	width: 110px;
 }
+
+#configuration {
+	height: 100%;
+	background: url(par4.jpg) 50% 0 no-repeat fixed;
+	color: #fff;
+
+	.section{
+		padding-top: 106px;
+	}
+
+  .row {
+    margin-bottom: 30px;
+  }
+
+  .contact-create-button{
+  	a{
+  		margin: 10px;
+  	}
+		input{
+			padding: 7px 30px;
+			border-radius: 5px;
+			background: #7f7fc2;
+			border: none;
+			color: white;
+			margin: 10px;
+		}
+	}
+}
+
+.contact-show{
+	background: url(par2.jpg) 50% 0 no-repeat fixed;
+	height: 100%;
+	padding: 40px;
+	padding-top: 126px;
+
+	.content-contact-show{
+		width: 500px;
+		height: 400px;
+		background: #DDEBFF;
+		border-radius: 15px;
+		box-shadow: 0px 0px 10px #000;
+		margin: 0 auto;
+		padding: 30px;
+		padding-top: 90px;
+
+		.intro-text-contact{
+			text-align: center;
+			padding-top: 0px;
+			padding-bottom: 50px;
+
+			.intro-lead-in-contact{
+				margin-bottom: 25px;
+				font-family: "Droid Serif",Helvetica,Arial,sans-serif;
+				font-size: 40px;
+				font-style: italic;
+				line-height: 40px;
+			}
+
+			.intro-heading-contact{
+				margin-bottom: 50px;
+				text-transform: uppercase;
+				font-family: "Montserrat" ,Helvetica,Arial,sans-serif;
+				font-size: 75px;
+				font-weight: 700;
+				line-height: 75px;
+			}
+		}
+
+		.btn{
+			padding: 6px 42px;
+		}
+	}
+}
+
+
+@media (max-width: 600px){
+	.contact-show{
+		.content-contact-show{
+			width: 100%;
+
+			.intro-text-contact{
+				.intro-lead-in-contact{
+					font-size: 30px;
+				}
+
+				.intro-heading-contact {
+					font-size: 45px;
+				}
+			}
+		}
+	}
+}
