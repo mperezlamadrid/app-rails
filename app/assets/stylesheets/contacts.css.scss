@@ -5,7 +5,7 @@
 	background: url(par1.jpg) 50% 0 no-repeat fixed;
 	padding: 20px;
 	padding-top: 94px;
-	height: 100%;
+	min-height: 100%;
 
 	.content-contacts-form{
 		background: #fff;
@@ -18,7 +18,7 @@
 }
 
 #configuration {
-	height: 100%;
+	min-height: 100%;
 	background: url(par4.jpg) 50% 0 no-repeat fixed;
 	color: #fff;
 
@@ -47,7 +47,7 @@
 
 .contact-show{
 	background: url(par2.jpg) 50% 0 no-repeat fixed;
-	height: 100%;
+	min-height: 100%;
 	padding: 40px;
 	padding-top: 126px;
 
