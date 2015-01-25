@@ -5,26 +5,31 @@ class ContactsController < ApplicationController
   # GET /contacts
   # GET /contacts.json
   def index
+    @title = "Listing Contacts"
     @contacts = Contact.all
   end
 
   # GET /contacts/1
   # GET /contacts/1.json
   def show
+    @title = "Contact"
   end
 
   # GET /contacts/new
   def new
+    @title = "New Contact"
     @contact = Contact.new
   end
 
   # GET /contacts/1/edit
   def edit
+    @title = "Edit Contact"
   end
 
   # POST /contacts
   # POST /contacts.json
   def create
+    @title = "Create Contact"
     @contact = Contact.new(contact_params)
 
     respond_to do |format|
@@ -41,6 +46,7 @@ class ContactsController < ApplicationController
   # PATCH/PUT /contacts/1
   # PATCH/PUT /contacts/1.json
   def update
+    @title = "Update Contact"
     respond_to do |format|
       if @contact.update(contact_params)
         format.html { redirect_to @contact, notice: 'Contact was successfully updated.' }
