@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #contacts-form{
-	background-image: asset-url(par1.jpg) 50% 0 no-repeat fixed;
+	background: image-url("par1.jpg") 50% 0 no-repeat fixed;
 	padding: 20px;
 	padding-top: 94px;
 	min-height: 100%;
@@ -19,7 +19,7 @@
 
 #configuration {
 	min-height: 100%;
-	background-image: asset-url(par4.jpg) 50% 0 no-repeat fixed;
+	background: image-url("par4.jpg") 50% 0 no-repeat fixed;
 	color: #fff;
 
 	.section{
@@ -46,7 +46,7 @@
 }
 
 .contact-show{
-	background-image: asset-url(par2.jpg) 50% 0 no-repeat fixed;
+	background: image-url("par2.jpg") 50% 0 no-repeat fixed;
 	min-height: 100%;
 	padding: 40px;
 	padding-top: 126px;

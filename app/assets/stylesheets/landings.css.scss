@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #home{
-	background-image: asset-url(par1.jpg) 50% 0 no-repeat fixed;
+	background: image-url("par1.jpg") 50% 0 no-repeat fixed;
 
 	article{
 		background: rgba(0, 0, 0, 0.67);
@@ -87,7 +87,7 @@
 
 #about-me{
 	min-height: 100%;
-	background-image: asset-url(bg-about.png) 80% 40% no-repeat fixed;
+	background: image-url("bg-about.png") 80% 40% no-repeat fixed;
 
 	.bg-mobile-about{
 		padding: 20px;

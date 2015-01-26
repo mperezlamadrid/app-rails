@@ -1,5 +1,5 @@
 .form-bg{
-	background-image: asset-url(par2.jpg) 50% 0 no-repeat;
+	background: image-url("par2.jpg") 50% 0 no-repeat;
 	min-height: 100%;
 
 	.form-signin{
@@ -42,11 +42,11 @@
 }
 
 .signup-bg{
-	background-image: asset-url(par3.jpg) 50% 0 no-repeat!important;
+	background: image-url("par3.jpg") 50% 0 no-repeat!important;
 }
 
 .forgot-bg{
-	background-image: asset-url(par4.jpg) 50% 0 no-repeat!important;
+	background: image-url("par4.jpg") 50% 0 no-repeat!important;
 }
 
 .field-reset{
