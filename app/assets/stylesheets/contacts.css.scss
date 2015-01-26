@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #contacts-form{
 	background: image-url("par1.jpg") 50% 0 no-repeat fixed;
+	background-size: cover;
 	padding: 20px;
 	padding-top: 94px;
 	min-height: 100%;
@@ -20,6 +21,7 @@
 #configuration {
 	min-height: 100%;
 	background: image-url("par4.jpg") 50% 0 no-repeat fixed;
+	background-size: cover;
 	color: #fff;
 
 	.section{
@@ -47,6 +49,7 @@
 
 .contact-show{
 	background: image-url("par2.jpg") 50% 0 no-repeat fixed;
+	background-size: cover;
 	min-height: 100%;
 	padding: 40px;
 	padding-top: 126px;
