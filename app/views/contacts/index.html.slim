@@ -4,24 +4,25 @@
       .row
         h1 Listing contacts
 
-        = link_to('New Contact', new_contact_path)
-
-        table.table.table-striped
-          thead
-            tr
-              th First name
-              th Last name
-              th Phone
-              th colspan="3"
-
-          tbody
-            - @contacts.each do |contact|
+        = link_to('New Contact', new_contact_path, class: "new-contact-button btn btn-primary")
+        
+        .table-responsive
+          table.table.table-striped
+            thead
               tr
-                td = contact.first_name
-                td = contact.last_name
-                td = contact.phone
-                td.contact-button = link_to 'Show', contact, class: "btn btn-primary"
-                td.contact-button = link_to 'Edit', edit_contact_path(contact), class: "btn btn-success"
-                td.contact-button = link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger"
+                th First name
+                th Last name
+                th Phone
+                th colspan="3"
+
+            tbody
+              - @contacts.each do |contact|
+                tr
+                  td = contact.first_name
+                  td = contact.last_name
+                  td = contact.phone
+                  td.contact-button = link_to 'Show', contact, class: "btn btn-primary"
+                  td.contact-button = link_to 'Edit', edit_contact_path(contact), class: "btn btn-success"
+                  td.contact-button = link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger"
 
         br

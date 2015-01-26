@@ -2,7 +2,7 @@
   .container  
     .row
       .form-signin.signup
-        .content-signin
+        .content-signin.col-xs-12
           h2 Sign up
           = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
             -if resource.errors.any?

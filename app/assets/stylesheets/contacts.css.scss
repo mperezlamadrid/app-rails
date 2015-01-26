@@ -9,7 +9,16 @@
 	min-height: 100%;
 
 	.content-contacts-form{
-		background: #fff;
+		background: rgba(255, 255, 255, 0.63);;
+		padding: 20px;
+
+		h1{
+			font-family: "Sketchy"
+		}
+
+		a.new-contact-button{
+			margin: 10px 0;
+		}
 	}
 }
 
@@ -93,11 +102,17 @@
 	}
 }
 
+.table-striped > tbody > tr:nth-child(odd) > td{
+	background-color: rgba(0, 0, 0, 0.18);
+}
+
 
 @media (max-width: 600px){
 	.contact-show{
 		.content-contact-show{
 			width: 100%;
+			padding: 10px;
+			padding-top: 70px;
 
 			.intro-text-contact{
 				.intro-lead-in-contact{
