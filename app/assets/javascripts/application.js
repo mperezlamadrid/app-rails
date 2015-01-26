@@ -18,8 +18,8 @@
 
 $(function(){	
 
-	$(".image-mision a img").mouseover(function(){
-	  $(this).siblings(".image-hover").toggleClass("show-image-hover");
-	});
+	// $(".image-mision a img").mouseover(function(){
+	//   $(this).siblings(".image-hover").toggleClass("show-image-hover");
+	// });
 
 });

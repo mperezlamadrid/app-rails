@@ -39,17 +39,17 @@
 			width: 250px;
 		}
 	}
-}
 
-.show-image-hover{
-	display: block!important;
+	.image-mision:hover .image-hover{
+		display: block!important;
 
-	img{
-		height: 80px!important;
-		width: 80px!important;
-		position: absolute;
-		top: 90px;
-		right: 86px;
+		img{
+			height: 80px!important;
+			width: 80px!important;
+			position: absolute;
+			top: 90px;
+			right: 86px;
+		}
 	}
 }
 
