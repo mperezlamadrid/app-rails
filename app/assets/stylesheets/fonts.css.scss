@@ -1,13 +1,20 @@
 @font-face {
   font-family: "Droid Serif";
-  src: url('fonts/DroidSerif-Italic.ttf');
+  src: asset-url('DroidSerif-Italic.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url('fonts/Montserrat-Regular.otf') format("truetype");
+  src: asset-url('Montserrat-Regular.otf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sketchy";
+  src: asset-url('sketchy.ttf');
   font-weight: normal;
   font-style: normal;
 }
